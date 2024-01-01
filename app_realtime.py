@@ -6,11 +6,9 @@ def read():
     cursor.execute("SELECT * FROM tabel_pasien")
     rows = cursor.fetchall()
 
-    # Clear existing data in the Treeview
     for row in tree.get_children():
         tree.delete(row)
 
-    # Populate the Treeview with the fetched data
     for row in rows:
         tree.insert("", "end", iid=row[0], values=(row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8]))
 

@@ -5,7 +5,7 @@ import sqlite3
 import os
 from PIL import Image, ImageTk
 
-class PasientManagement:
+class AplikasiManajemenPasien:
     def __init__(self, app, db_name='pasien.db'):
         self.app = app
         app.title('Riwayat')
@@ -39,5 +39,5 @@ class PasientManagement:
         table.pack(pady = 10)
 
 app = CTk.CTk()
-PasientManagement(app)
+AplikasiManajemenPasien(app)
 app.mainloop()

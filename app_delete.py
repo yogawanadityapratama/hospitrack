@@ -7,7 +7,6 @@ class AplikasiManajemenPasien:
     def __init__(self, app, db_name='pasien.db'):
         self.app = app
         app.title('Delete')
-        app.iconbitmap('icon.png')
         app.geometry('190x150')
 
         self.connection = sqlite3.connect(db_name)
